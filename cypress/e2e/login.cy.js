@@ -37,7 +37,7 @@ describe('Login Portal', () => {
     cy.wait(500);
     cy.contains('button', 'LOGIN').click();
 
-    cy.contains('Invalid email or password').should('be.visible');
+    cy.contains('Invalid username or password').should('be.visible');
   });
 
   it('TC004 - Login with Empty Fields', () => {
